@@ -1,0 +1,195 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom right, rgb(16, 29, 90), rgb(61, 20, 99));
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:  rgb(25, 15, 80);
+    padding: 10px 0;
+}
+
+footer {
+    padding: 20px 0;
+    color: #a49eff;
+    text-align: center;
+    background-color: rgb(19, 15, 58);
+    height: 80px;
+    position: sticky;
+    top: 100%;
+}
+
+#main-logo {
+    width: 350px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 5px 5px 10px rgba(144, 82, 243, 0.5);
+}
+
+#character-nav {
+    background-color: #683785;
+    background-image: url(../images/Arcane.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+#character-nav ul {
+    list-style-type: none;
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#character-nav ul li {
+    height: 200px;
+    margin: 10px 10px; 
+    background-color: rgb(32, 7, 32);
+    box-shadow: 0 155px 0 0 rgb(44, 34, 129) inset;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+#character-nav ul li:hover {
+    box-shadow: 0 200px 0 0 rgb(139, 64, 161) inset;
+}
+
+#character-nav ul li h2 {
+    color: rgb(255, 187, 0);
+    font-size: 16px;
+    text-align: center;
+}
+
+#character-nav ul li a {
+    text-decoration: none;
+}
+
+
+#jinx {
+    background-position: -0px 0;
+}
+
+#vi {
+    background-position: -150px 0;
+}
+
+#caitlyn {
+    background-position: -300px 0;
+}
+
+#jayce {
+    background-position: -450px 0;
+}
+
+#viktor {
+    background-position: -600px 0;
+}
+
+#silco {
+    background-position: -750px 0;
+}
+
+#jinx:hover, #vi:hover, #caitlyn:hover, #hulk:hover, #thor:hover, #widow:hover{
+    background-position-y: -150px;
+}
+
+#instructions {
+    padding: 20px;
+    margin: 50px;
+    text-align: center;
+}
+
+#instructions h3{
+    font-size: 32px;
+    text-align: center;
+    color: rgb(255, 202, 55);
+    margin-bottom: 14px;
+}
+
+#instructions p{
+    color: rgb(255, 174, 0);
+    font-size: 20px;
+    font-style: italic;
+}
+
+.champion {
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/ArcaneChampions.png);
+}
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(32, 56, 100, 0.85);
+    background-image: url(../images/jInx_1.png);
+    background-repeat: no-repeat;
+    background-size: 60vh;
+    background-position: 50px bottom;
+    display: none;
+    text-align: right;
+}
+
+#lightbox2 {
+    background-image: url(../images/Vi_1.png);
+}
+
+#lightbox3 {
+    background-image: url(../images/Caitlyn_1.png);
+}
+
+#lightbox4 {
+    background-image: url(../images/Jayce_1.png);
+}
+
+#lightbox5 {
+    background-image: url(../images/Viktor_1.png);
+}
+
+#lightbox6 {
+    background-image: url(../images/Silco_1.png);
+}
+
+
+
+.lightbox:target {
+    display: block;
+}
+
+.lightbox-close {
+    color: rgb(255, 145, 0);
+    font-size: 3em;
+    text-decoration: none;
+    font-weight: bolder;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.lightbox-close:hover { 
+    opacity: 0.5; color: rgb(255, 159, 215); 
+}
+
+.lightbox article {
+    width: 700px;
+    margin-left: 45%;
+    padding-top: 100px;
+}
+
+.lightbox p, .lightbox h3 {
+    text-align:center;
+    font-style: italic;
+    color: rgb(242, 201, 255);
+}
+
+.hidden {
+    display: none;
+}
